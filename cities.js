@@ -1,4 +1,4 @@
-import citiesList from '/cities.json' assert { type: "json" };
+import citiesList from './cities.json' assert { type: "json" };
 
 const dataList = document.getElementById('citiesData')
 

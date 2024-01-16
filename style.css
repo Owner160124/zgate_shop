@@ -71,7 +71,7 @@ h2{
 }
 
 .advantages li::before{
-  content: url('/public/icons/check.png');
+  content: url('./public/icons/check.png');
 }
 
 .block-2{
