@@ -1,0 +1,162 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-weight:inherit;}
+/*--------------------*/
+
+body{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  padding: 0 10px;
+  gap: 2em;
+  margin: 2em auto;
+}
+
+.block-1 h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.standarts span{
+  font-size: 18px;
+}
+
+.standarts :nth-child(even){
+  padding: 0 0.5em;
+  margin: 0 0.5em;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.advantages li{
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  font-size: 16px;
+}
+
+.advantages li::before{
+  content: url('/public/icons/check.png');
+}
+
+.block-2{
+  background-color: #e2f7e2;;
+}
+
+.block-2  h1{
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.signals{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signals div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.block-3{
+  margin-top: 3em;
+}
+
+.form-wrapper{
+  background: linear-gradient(to top, #40ff00 0%, #2799b0 99%, #2799b0 100%);
+  border-radius: 5px;
+}
+
+.form{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.form img{
+  transform: translateY(-30%);
+  margin-bottom: -60px;
+}
+
+.prices p{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.prices p:first-of-type{
+  font-size: 1.2em;
+  text-decoration: line-through;
+}
+
+.form h1{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+button{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.5em  1em;
+  border-radius: 36px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.success-msg{
+  color: black;
+  text-align: center;
+  display: none;
+}
+
+.error-msg{
+  color: rgb(211, 86, 86);
+  text-align: center;
+  display: none;
+}

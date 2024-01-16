@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Z Gate</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container block-1">
+    <div class="wrapper">
+      <img src="/public/logo.png" width="161" height="63" alt="logo" />
+      <h2>Усилитель сотовой связи и интернета нового поколения</h2>
+      <img src="/public/pic1.png" width="331" height="256" alt="img" />
+      <p class="standarts">
+        <span>3G/4G/LTE</span>
+        <span>Цифровое ТВ</span>
+        <span>Wi-Fi</span>
+      </p>
+      <ul class="advantages">
+        <li>
+          <span>Усиливает сигнал 3G, 4G и LTE в 16 раз</span>
+        </li>
+        <li>
+          <span>Увеличивает скорость мобильного интернета</span>
+        </li>
+        <li>
+          <span>Улучшает прием цифрового ТВ и WIFi</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container block-2">
+    <div class="wrapper">
+      <h1>Вместо 1000 слов</h1>
+      <div class="signals">
+        <div>
+          <img src="/public/icons/signal1.png" width="56" height="56" alt=""/>
+          <span>Обычный сигнал</span>
+        </div>
+        <div>
+          <img src="/public/icons/signal2.png" width="56" height="56" alt=""/>
+          <span>С Z-Gate</span>
+        </div>
+      </div>
+      <ul class="advantages">
+        <li>
+          <span>Усиливает как прием, так и передачу!</span>
+        </li>
+        <li>
+          <span>Незаменим для дома и дачи!</span>
+        </li>
+        <li>
+          <span>Безопасен для детей и животных!</span>
+        </li>
+        <li>
+          <span>Потребляет меньше обычной лампочки!</span>
+        </li>
+        <li>
+          <span>Радиус действия 50м!</span>
+        </li>
+        <li>
+          <span>Без абонентской платы!</span>
+        </li>
+        <li>
+          <span>Не требует выносной антенны!</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container block-3">
+    <div class="wrapper">
+      <div class="form-wrapper">
+        <form class="form" id="form">
+          <img src="/public/pic2.png" width="267" height="253" alt="img" />
+          <div class="prices">
+            <p class="old_price">1580 грн</p>
+            <p>780 грн</p>
+          </div>
+          <h1>Оформить заказ сейчас!</h1>
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="tel" name="phone" placeholder="Ваш телефон" required pattern="\+?380.*" title="Номер телефона должен начинаться с +380 или 380" />
+          <input type="text" name="city" id="city" placeholder="Ваше город" required list="citiesData" />
+          <datalist id="citiesData"></datalist>
+          <input type="text" name="post" placeholder="Отделение новой почты" required pattern="\d+" title="Только цифры" />
+          <button type="submit">Заказать сейчас</button>
+          <p class="success-msg" id="success">Отправлено! Мы скоро свяжемся с Вами!</p>
+          <p class="error-msg" id="error">Что-то пошло не так. Попробуйте ещё раз</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/cities.js" type="module"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
